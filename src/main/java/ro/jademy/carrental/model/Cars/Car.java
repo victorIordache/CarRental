@@ -1,8 +1,9 @@
-package ro.jademy.carrental;
+package main.java.ro.jademy.carrental.model.Cars;
 
-public class Car {
+public abstract class Car {
 
     // Q: how can we better represent the car make?
+    public String serialNumber;
     public String make;
     public String model;
     public Integer year;

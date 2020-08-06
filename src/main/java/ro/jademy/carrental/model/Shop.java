@@ -1,4 +1,4 @@
-package ro.jademy.carrental;
+package main.java.ro.jademy.carrental.model;
 
 public class Shop {
     // Q: what fields and methods should this class contain?

@@ -1,4 +1,4 @@
-package ro.jademy.carrental;
+package main.java.ro.jademy.carrental;
 
 public class Main {
 
