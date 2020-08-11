@@ -1,7 +1,7 @@
-package main.java.ro.jademy.carrental.model.data;
+package ro.jademy.carrental.model.data;
 
-import main.java.ro.jademy.carrental.model.Person.Customer;
-import main.java.ro.jademy.carrental.model.Person.Salesman;
+import ro.jademy.carrental.model.Person.Customer;
+import ro.jademy.carrental.model.Person.Salesman;
 
 import java.util.ArrayList;
 
@@ -28,8 +28,8 @@ public class dataProvider {
         ArrayList<Salesman> salesmanList = new ArrayList<>();
 
         Salesman salesman1 = new Salesman("Victor", "Iordache", "1922323136315",1,"victor.iordache","victor.password"); salesmanList.add(salesman1);
-        Salesman salesman2 = new Salesman("Victor", "Iordache", "1983235655211",1,"victor.iordache","victor.password"); salesmanList.add(salesman1);
-        Salesman salesman3 = new Salesman("Victor", "Iordache", "1912345698763",1,"victor.iordache","victor.password"); salesmanList.add(salesman1);
+        Salesman salesman2 = new Salesman("Ionut", "Meran", "1983235655211",1,"ionut.meran","ionut.password"); salesmanList.add(salesman1);
+        Salesman salesman3 = new Salesman("Steve", "Jobs", "1912345698763",1,"steve.jobs","steve.password"); salesmanList.add(salesman1);
 
         return salesmanList;
     }

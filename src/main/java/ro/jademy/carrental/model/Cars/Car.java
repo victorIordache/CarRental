@@ -1,4 +1,4 @@
-package main.java.ro.jademy.carrental.model.Cars;
+package ro.jademy.carrental.model.Cars;
 
 public abstract class Car {
 

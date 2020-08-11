@@ -1,14 +1,29 @@
-package main.java.ro.jademy.carrental.model;
+package ro.jademy.carrental.model;
+
+import ro.jademy.carrental.model.Person.Customer;
+import ro.jademy.carrental.model.Person.Salesman;
+import ro.jademy.carrental.model.data.dataProvider;
+
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Shop {
     // Q: what fields and methods should this class contain?
 
     public boolean login(String username, String password) {
-
         // TODO: implement a basic user login
 
+        ArrayList<Salesman> salesmenList = dataProvider.getSalesmanList();
+        for(Salesman salesman : salesmenList){
+            if(salesman.getUsername().equals(username) && salesman.getPassword().equals(password)) {
+                System.out.println("Welcome " + salesman.getLastName() +" "+ salesman.getFirstName());
+                return true;
+            }
+        }
+        System.out.println("Failed to login!");
         return false;
     }
+
 
     public void showMenu() {
 

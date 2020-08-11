@@ -1,4 +1,4 @@
-package main.java.ro.jademy.carrental.model.Person;
+package ro.jademy.carrental.model.Person;
 
 public abstract class Person {
 

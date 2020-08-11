@@ -1,4 +1,4 @@
-package main.java.ro.jademy.carrental.model.services;
+package ro.jademy.carrental.model.services;
 
 import main.java.ro.jademy.carrental.model.services.interfaces.CallService;
 

@@ -1,6 +1,6 @@
-package main.java.ro.jademy.carrental.model.Person;
+package ro.jademy.carrental.model.Person;
 
-import main.java.ro.jademy.carrental.model.Person.Person;
+import ro.jademy.carrental.model.Person.Person;
 
 public class Salesman extends Person {
 

@@ -1,6 +1,7 @@
-package main.java.ro.jademy.carrental.model.Cars;
+package ro.jademy.carrental.model.Cars;
 
 import java.time.LocalDate;
+import ro.jademy.carrental.model.Cars.Car;
 
 public class RentedCarHistoryItem {
 
