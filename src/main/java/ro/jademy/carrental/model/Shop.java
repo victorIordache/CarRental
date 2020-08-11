@@ -1,29 +1,34 @@
 package ro.jademy.carrental.model;
 
+import ro.jademy.carrental.model.Cars.Car;
 import ro.jademy.carrental.model.Person.Customer;
 import ro.jademy.carrental.model.Person.Salesman;
 import ro.jademy.carrental.model.data.dataProvider;
 
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.List;
 
 public class Shop {
     // Q: what fields and methods should this class contain?
+    private List<Car> carList = new ArrayList<>();
 
-    public boolean login(String username, String password) {
-        // TODO: implement a basic user login
-
+    public Salesman login(String username, String password) {
+        // Create a list that contains all salesmen
+        // search through-out the list and if username & password is correct
+        // login user
+        // else
+        // logout user
         ArrayList<Salesman> salesmenList = dataProvider.getSalesmanList();
         for(Salesman salesman : salesmenList){
             if(salesman.getUsername().equals(username) && salesman.getPassword().equals(password)) {
                 System.out.println("Welcome " + salesman.getLastName() +" "+ salesman.getFirstName());
-                return true;
+                Salesman currentuser = salesman;
+                return currentuser;
             }
         }
         System.out.println("Failed to login!");
-        return false;
+        return null;
     }
-
 
     public void showMenu() {
 
@@ -60,5 +65,16 @@ public class Shop {
         //       weekdays and national holidays in which the discount should be smaller
 
         // Q: what should be the return type of this method?
+    }
+
+    public void logout(Salesman salesman){
+        System.out.println("Goodbye! See you soon.");
+        salesman = null;
+    }
+
+    public void listAllCars() {
+        for(Car car : carList){
+            System.out.println();
+        }
     }
 }

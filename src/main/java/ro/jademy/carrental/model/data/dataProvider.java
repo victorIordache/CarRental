@@ -1,5 +1,6 @@
 package ro.jademy.carrental.model.data;
 
+import ro.jademy.carrental.model.Cars.Car;
 import ro.jademy.carrental.model.Person.Customer;
 import ro.jademy.carrental.model.Person.Salesman;
 
@@ -32,5 +33,13 @@ public class dataProvider {
         Salesman salesman3 = new Salesman("Steve", "Jobs", "1912345698763",1,"steve.jobs","steve.password"); salesmanList.add(salesman1);
 
         return salesmanList;
+    }
+
+    public static ArrayList<Car> getCarList(){
+        ArrayList<Car> carList = new ArrayList<>();
+
+
+
+        return carList;
     }
 }
